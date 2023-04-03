@@ -43,7 +43,7 @@ defmodule ExqUIWeb.Router do
 
     session_opts = [
       session: {__MODULE__, :__session__, []},
-      root_layout: {ExqUIWeb.LayoutView, :root}
+      root_layout: {ExqUIWeb.Layouts, :root}
     ]
 
     on_mount = options[:live_session_on_mount]

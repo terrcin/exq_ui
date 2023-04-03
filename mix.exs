@@ -9,7 +9,7 @@ defmodule ExqUI.MixProject do
       version: @version,
       elixir: "~> 1.12",
       elixirc_paths: elixirc_paths(Mix.env()),
-      compilers: [:phoenix] ++ Mix.compilers(),
+      compilers: Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       docs: docs(),
@@ -34,9 +34,9 @@ defmodule ExqUI.MixProject do
 
   defp deps do
     [
-      {:exq, ">= 0.16.2"},
+      {:exq, "~> 0.17"},
       {:exq_scheduler, "~> 1.0", optional: true},
-      {:phoenix_live_view, "~> 0.17"},
+      {:phoenix_live_view, "~> 0.18.18"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
