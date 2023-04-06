@@ -1,4 +1,4 @@
-defmodule ExqUIWeb.ErrorHtml do
+defmodule ExqUIWeb.ErrorHTML do
   @moduledoc false
   use ExqUIWeb, :html
 
