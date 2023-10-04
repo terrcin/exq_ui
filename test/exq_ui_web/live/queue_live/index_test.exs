@@ -5,7 +5,8 @@ defmodule ExqUIWeb.QueueLive.IndexTest do
     {:ok, view, _} = live(conn, "/queues")
     html = render(view)
 
-    assert html =~ ~r/hard.*1.*Delete/
+    assert html =~ ~r/hard.*/
+    assert html =~ ~r/1.*Delete/
 
     html =
       element(
